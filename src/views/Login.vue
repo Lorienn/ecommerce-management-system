@@ -15,7 +15,7 @@
         </el-form-item>
         <el-form-item class="btns">
           <el-button type="primary" @click="login">提交</el-button>
-          <el-button type="info" @click="resetLoginForm()">重置</el-button>
+          <el-button type="info" @click="resetLoginForm">重置</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -44,9 +44,11 @@ export default {
     }
   },
   methods: {
+    // 重置
     resetLoginForm () {
       this.$refs.loginFormRef.resetFields()
     },
+    // 登陆
     login () {
       this.$refs.loginFormRef.validate(async valid => {
         if (!valid) return
