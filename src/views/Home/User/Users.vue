@@ -40,7 +40,7 @@
         <el-table-column label="操作" width="150px">
           <template slot-scope="scope">
             <el-button type="primary" icon="el-icon-edit" circle size="small" @click="showEditDialog(scope.row.id)"></el-button>
-            <el-button type="danger" icon="el-icon-delete" circle size="small"></el-button>
+            <el-button type="danger" icon="el-icon-delete" circle size="small" @click="removeUser(scope.row.id)"></el-button>
             <el-tooltip effect="dark" content="分配角色" placement="top" :enterable="false">
               <el-button type="warning" icon="el-icon-setting" circle size="small"></el-button>
             </el-tooltip>
@@ -237,6 +237,18 @@ export default {
       const res = await axios.get(`users/${id}`)
       this.editForm = res.data.data
       this.editDialogVisible = true
+    },
+    removeUser (id) {
+      this.$confirm('此操作将永久删除该用户, 是否继续?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(async () => {
+        const res = await axios.delete(`users/${id}`)
+        if (res.data.meta.status !== 200) return this.$message.error('删除失败')
+        this.$message.success('删除成功')
+        this.getUserList()
+      }).catch(err => err)
     }
   }
 }
