@@ -132,7 +132,7 @@ export default {
           { required: true, message: '请输入商品数量', trigger: 'blur' }
         ],
         goods_cat: [
-          { required: true, message: '请选择商品分类', trigger: 'blur' }
+          { required: true, message: '请选择商品分类', trigger: 'change' }
         ]
       },
       // 商品分类

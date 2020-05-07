@@ -126,18 +126,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.el-breadcrumb {
-  font-size: 12px;
-}
-.el-card {
-  margin-top: 15px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
-  .el-table {
-    margin-top: 15px;
-    font-size: 12px;
-  }
-  .el-pagination {
-    margin-top: 15px;
-  }
-}
 </style>
