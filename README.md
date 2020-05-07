@@ -1,4 +1,4 @@
-# Element电商管理系统
+# Element后台管理系统
 > 一个基于Vue的电商后台管理系统，采用前后端分离的开发模式。项目使用的前端技术栈有Vue、vue-router、Element-UI、Axios、Echarts等。
 ## Project setup
 ```
