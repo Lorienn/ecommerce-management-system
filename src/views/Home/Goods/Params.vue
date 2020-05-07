@@ -37,7 +37,12 @@
             <!-- 展开行 -->
             <el-table-column type="expand">
               <template slot-scope="scope">
-                <el-tag v-for="(item, i) in scope.row.attr_vals" :key="i" closable @close="handleClose(i, scope.row)">{{item}}</el-tag>
+                <el-tag
+                  v-for="(item, i) in scope.row.attr_vals"
+                  :key="i"
+                  closable
+                  @close="handleClose(i, scope.row)"
+                >{{item}}</el-tag>
                 <el-input
                   class="input-new-tag"
                   v-if="scope.row.inputVisible"
@@ -47,7 +52,12 @@
                   @keyup.enter.native="$event.target.blur"
                   @blur="handleInputConfirm(scope.row)"
                 ></el-input>
-                <el-button v-else class="button-new-tag" size="small" @click="showInput(scope.row)">+ New Tag</el-button>
+                <el-button
+                  v-else
+                  class="button-new-tag"
+                  size="small"
+                  @click="showInput(scope.row)"
+                >+ New Tag</el-button>
               </template>
             </el-table-column>
             <el-table-column type="index" label="#"></el-table-column>
@@ -83,7 +93,12 @@
             <!-- 展开行 -->
             <el-table-column type="expand">
               <template slot-scope="scope">
-                <el-tag v-for="(item, i) in scope.row.attr_vals" :key="i" closable @close="handleClose(i, scope.row)">{{item}}</el-tag>
+                <el-tag
+                  v-for="(item, i) in scope.row.attr_vals"
+                  :key="i"
+                  closable
+                  @close="handleClose(i, scope.row)"
+                >{{item}}</el-tag>
                 <el-input
                   class="input-new-tag"
                   v-if="scope.row.inputVisible"
@@ -93,7 +108,12 @@
                   @keyup.enter.native="$event.target.blur"
                   @blur="handleInputConfirm(scope.row)"
                 ></el-input>
-                <el-button v-else class="button-new-tag" size="small" @click="showInput(scope.row)">+ New Tag</el-button>
+                <el-button
+                  v-else
+                  class="button-new-tag"
+                  size="small"
+                  @click="showInput(scope.row)"
+                >+ New Tag</el-button>
               </template>
             </el-table-column>
             <el-table-column type="index" label="#"></el-table-column>
@@ -344,11 +364,14 @@ export default {
     },
     // 保存标签列表变化
     async saveAttrVals (row) {
-      const res = await axios.put(`categories/${this.selectedKeys[2]}/attributes/${row.attr_id}`, {
-        attr_name: row.attr_name,
-        attr_sel: row.attr_sel,
-        attr_vals: row.attr_vals.join(',')
-      })
+      const res = await axios.put(
+        `categories/${this.selectedKeys[2]}/attributes/${row.attr_id}`,
+        {
+          attr_name: row.attr_name,
+          attr_sel: row.attr_sel,
+          attr_vals: row.attr_vals.join(',')
+        }
+      )
       if (res.data.meta.status !== 200) {
         return this.$message.error('添加失败')
       }
@@ -385,35 +408,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.el-breadcrumb {
+.el-row {
+  margin-top: 15px;
+  .el-cascader {
+    margin-left: 10px;
+  }
+}
+.el-tabs {
+  margin-top: 15px;
   font-size: 12px;
 }
-.el-card {
-  margin-top: 15px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
-  .el-row {
-    margin-top: 15px;
-    .el-cascader {
-      margin-left: 10px;
-    }
+.el-table {
+  .el-tag {
+    margin-left: 10px;
   }
-  .el-tabs {
-    margin-top: 15px;
-    font-size: 12px;
+  .el-input.input-new-tag {
+    width: 120px;
+    margin-left: 10px;
   }
-  .el-table {
-    margin-top: 15px;
-    font-size: 12px;
-    .el-tag {
-      margin-left: 10px;
-    }
-    .el-input.input-new-tag {
-      width: 120px;
-      margin-left: 10px;
-    }
-    .el-button.button-new-tag {
-      margin-left: 10px;
-    }
+  .el-button.button-new-tag {
+    margin-left: 10px;
   }
 }
 </style>

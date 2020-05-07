@@ -2,15 +2,24 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import ElementUI from 'element-ui'
+// Axios
 import axios from 'axios'
-import TreeTable from 'vue-table-with-tree-grid'
+// element-UI
+import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import './assets/css/global.css'
+// 阿里iconfont
 import './assets/fonts/iconfont.css'
+// 树形表格
+import TreeTable from 'vue-table-with-tree-grid'
+// 富文本编辑器
+import VueQuillEditor from 'vue-quill-editor'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+// 自定义CSS
+import './assets/css/global.css'
 
 Vue.config.productionTip = false
-
 Vue.use(ElementUI)
 Vue.use(axios)
 axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
@@ -19,6 +28,7 @@ axios.interceptors.request.use(config => {
   return config
 })
 Vue.component('tree-table', TreeTable)
+Vue.use(VueQuillEditor)
 
 Vue.filter('dateFormat', function (dateStr) {
   const dt = new Date(dateStr * 1000)

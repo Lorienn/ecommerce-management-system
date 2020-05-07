@@ -7,3 +7,34 @@ body,
     padding: 0;
     min-width: 1366px;
 }
+
+/* ElmentUI */
+.el-breadcrumb {
+    font-size: 12px;
+}
+
+.el-card {
+    margin-top: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.el-table {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.el-pagination {
+    margin-top: 15px;
+}
+
+.el-steps {
+    margin-top: 30px;
+}
+
+.el-step__title {
+    font-size: 14px;
+}
+/* quill-editor */
+.ql-editor {
+    min-height: 300px;
+}

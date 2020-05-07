@@ -77,7 +77,15 @@
     </el-card>
     <!-- 分配权限对话框 -->
     <el-dialog title="分配权限" :visible.sync="rightDialogVisible" @close="closeRightDialog">
-      <el-tree :data="rightList" :props="treeProps" show-checkbox node-key="id" default-expand-all :default-checked-keys="defKeys" ref="treeRef"></el-tree>
+      <el-tree
+        :data="rightList"
+        :props="treeProps"
+        show-checkbox
+        node-key="id"
+        default-expand-all
+        :default-checked-keys="defKeys"
+        ref="treeRef"
+      ></el-tree>
       <div slot="footer" class="dialog-footer">
         <el-button @click="rightDialogVisible = false">取 消</el-button>
         <el-button type="primary" @click="assignRight">确 定</el-button>
@@ -127,7 +135,9 @@ export default {
       })
         .then(async () => {
           const res = await axios.delete(`roles/${role.id}/rights/${rightId}`)
-          if (res.data.meta.status !== 200) { return this.$message.error('删除角色权限失败') }
+          if (res.data.meta.status !== 200) {
+            return this.$message.error('删除角色权限失败')
+          }
           role.children = res.data.data
           this.$message.success('删除成功!')
         })
@@ -136,7 +146,7 @@ export default {
     // 显示分配权限对话框
     async showRightDialog (role) {
       const res = await axios.get('rights/tree')
-      if (res.data.meta.status !== 200) return this.$message.error('获取当前用户权限失败')
+      if (res.data.meta.status !== 200) { return this.$message.error('获取当前用户权限失败') }
       this.rightList = res.data.data
       this.getLeafKeys(role, this.defKeys)
       this.rightDialogVisible = true
@@ -177,19 +187,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.el-breadcrumb {
-  font-size: 12px;
-}
-.el-card {
-  margin-top: 15px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
-  .el-table {
-    margin-top: 15px;
-    font-size: 12px;
-    .el-row {
-      .el-tag {
-        margin: 7px;
-      }
+.el-table {
+  .el-row {
+    .el-tag {
+      margin: 7px;
     }
   }
 }
