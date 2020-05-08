@@ -20,7 +20,7 @@
 
 ### 业务功能
 
-![struc](https://github.com/Lorienn/ecommerce-management-system/tree/master/screenshots/struc.png)
+![struc](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/struc.png)
 
 ------
 
@@ -58,7 +58,7 @@
 
 - 使用作用域插槽```slot-scope```获取组件数据并自定义渲染模板。
 
-  ![users](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\users.png)
+  ![users](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/users.png)
 
 
 
@@ -70,11 +70,11 @@
 
   - 使用```<el-tree>```树形控件展示角色可分配权限列表。
 
-  ![roles](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\roles.png)
+  ![roles](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/roles.png)
 
 - 权限列表
 
-  ![rights](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\rights.png)
+  ![rights](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/rights.png)
 
 
 
@@ -84,7 +84,7 @@
 
   - 使用全局过滤器```Vue.filter```自定义Date对象的显示格式。
 
-  ![goods](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\goods.png)
+  ![goods](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/goods.png)
   
 - 添加商品
 
@@ -94,19 +94,19 @@
 
   - 使用```<el-form>```完成添加商品表单，自定义表单校验规则，并实现表单提交前预校验。
 
-  ![add](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\add.png)
+  ![add](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/add.png)
 
-  ![editor](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\editor.png)
+  ![editor](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/editor.png)
 
 - 分类参数
 
-  ![params](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\params.png)
+  ![params](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/params.png)
 
 - 商品分类
 
   - 使用```vue-table-with-tree-grid```树形表格组件展示一、二、三级商品分类。
 
-  ![categories](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\categories.png)
+  ![categories](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/categories.png)
 
 
 
@@ -114,9 +114,9 @@
 
 - 使用```<el-timeline>```时间线组件展示订单的物流信息。
 
-  ![orders](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\orders.png)
+  ![orders](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/orders.png)
 
-  ![timeline](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\timeline.png)
+  ![timeline](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/timeline.png)
 
 
 
@@ -124,7 +124,7 @@
 
 - 使用```Echarts```展示用户来源数据报表。
 
-  ![reports](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\reports.png)
+  ![reports](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/reports.png)
 
 ------
 
@@ -158,7 +158,7 @@
 
 通过Vue UI可视化面板查看打包报告，分析如何优化/压缩体积过大的文件。
 
-![report](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\report.png)
+![report](https://github.com/Lorienn/ecommerce-management-system/blob/master/screenshots/report.png)
 
 
 
