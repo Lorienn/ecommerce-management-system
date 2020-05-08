@@ -16,17 +16,27 @@ import VueQuillEditor from 'vue-quill-editor'
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
+// NProgress
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 // 自定义CSS
 import './assets/css/global.css'
 
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+
 Vue.use(axios)
 axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
 axios.interceptors.request.use(config => {
+  NProgress.start()
   config.headers.Authorization = window.sessionStorage.token
   return config
 })
+axios.interceptors.response.use(config => {
+  NProgress.done()
+  return config
+})
+
+Vue.use(ElementUI)
 Vue.component('tree-table', TreeTable)
 Vue.use(VueQuillEditor)
 

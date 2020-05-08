@@ -253,7 +253,6 @@ export default {
           this.addForm.attrs.push(newInfo)
         })
         form.attrs = this.addForm.attrs
-        console.log(form)
         const res = await axios.post('goods', form)
         if (res.data.meta.status !== 201) {
           return this.$message.error('添加商品失败')
