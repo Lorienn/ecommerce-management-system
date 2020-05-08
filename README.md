@@ -20,7 +20,7 @@
 
 ### 业务功能
 
-![struc](C:\Users\英雄\Desktop\学习\Vue.js\MyProjects\struc.png)
+![struc](https://github.com/Lorienn/ecommerce-management-system/tree/master/screenshots/struc.png)
 
 ------
 
