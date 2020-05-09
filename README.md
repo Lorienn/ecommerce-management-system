@@ -35,7 +35,7 @@
 
 - 通过路由导航守卫```router.beforeEach```控制用户访问权限。防止尚未登录的用户试图通过URL访问除登录页面之外的其他页面。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508211538938.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![login](https://seanboy.club/uploads/images/2020-05-09~10-29-22~login.png)
 
 
 
@@ -57,7 +57,7 @@
 
 - 使用作用域插槽```slot-scope```获取组件数据并自定义渲染模板。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508211808331.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![users](https://seanboy.club/uploads/images/2020-05-09~10-29-22~users.png)
 
 
 
@@ -69,11 +69,11 @@
 
   - 使用```<el-tree>```树形控件展示角色可分配权限列表。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508211907596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![roles](https://seanboy.club/uploads/images/2020-05-09~10-29-22~roles.png)
 
 - 权限列表
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508211935196.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![rights](https://seanboy.club/uploads/images/2020-05-09~10-29-22~rights.png)
 
 
 #### 5.商品管理
@@ -82,7 +82,7 @@
 
   - 使用全局过滤器```Vue.filter```自定义Date对象的显示格式。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212026159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![goods](https://seanboy.club/uploads/images/2020-05-09~10-29-22~goods.png)
   
 - 添加商品
 
@@ -92,28 +92,28 @@
 
   - 使用```<el-form>```完成添加商品表单，自定义表单校验规则，并实现表单提交前预校验。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020050821200817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![add](https://seanboy.club/uploads/images/2020-05-09~10-29-22~add.png)
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212129161.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![editor](https://seanboy.club/uploads/images/2020-05-09~10-29-22~editor.png)
 
 - 分类参数
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212052339.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![params](https://seanboy.club/uploads/images/2020-05-09~10-29-22~params.png)
 
 - 商品分类
 
   - 使用```vue-table-with-tree-grid```树形表格组件展示一、二、三级商品分类。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212108261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![categories](https://seanboy.club/uploads/images/2020-05-09~10-29-22~categories.png)
 
 
 #### 6.订单管理-订单列表
 
 - 使用```<el-timeline>```时间线组件展示订单的物流信息。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212207377.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![orders](https://seanboy.club/uploads/images/2020-05-09~10-29-22~orders.png)
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020050821223212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![timeline](https://seanboy.club/uploads/images/2020-05-09~10-29-22~timeline.png)
 
 
 
@@ -121,7 +121,7 @@
 
 - 使用```Echarts```展示用户来源数据报表。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212247190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+  ![reports](https://seanboy.club/uploads/images/2020-05-09~10-29-22~reports.png)
 
 ------
 
@@ -155,7 +155,7 @@
 
 通过Vue UI可视化面板查看打包报告，分析如何优化/压缩体积过大的文件。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508212305639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xvcmllbm4=,size_16,color_FFFFFF,t_70)
+![report](https://seanboy.club/uploads/images/2020-05-09~10-29-22~report.png)
 
 
 ###### 2.配置Webpack
